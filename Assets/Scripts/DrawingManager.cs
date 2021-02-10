@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿
+// Using DrawManager Instead
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 
-// Communicates between whats is being "drawn" (ie. tracking the controller) and what is being shown (Feedback)
+// // Communicates between whats is being "drawn" (ie. tracking the controller) and what is being shown (Feedback)
 
 public class DrawingManager : MonoBehaviour
 {
@@ -21,7 +24,7 @@ public class DrawingManager : MonoBehaviour
     {
         if (Instance == null)
         {
-            Instance == this; 
+            Instance = this; 
         }
         
     }
